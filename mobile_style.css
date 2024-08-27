@@ -1,0 +1,186 @@
+@font-face {
+  font-family: LatoRegular;
+  src: url(Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: LatoLight;
+  src: url(Lato/Lato-Light.ttf);
+}
+
+
+@media only screen and (max-width: 480px) {
+  
+  body {
+    margin: 0;
+    background-color: #222831;
+  }
+  
+  .container {
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+  }
+
+  .name {
+    font-family: LatoRegular;
+    position: absolute;
+    top: 85px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    white-space: nowrap; 
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+  }
+    
+  .title {
+    font-family: LatoRegular;
+    position: absolute;
+    top: 95px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    font-size: 18px;
+    color: white;
+    opacity: 0.50;
+  }
+  
+  
+  .background-img {
+    top: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  
+  .content {
+    background-color: #222831;
+    padding: 100px 14px 34px;
+    color: white;
+    text-align: left;
+  }
+  
+  .profile-pic {
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 150px;
+    border-radius: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: auto ;
+  }
+  
+  .about {
+    padding: 0 4px;
+  }
+  
+
+
+  .divider {
+    position: relative;
+    height: 5px;
+    width: 89px;
+    background-color: black;
+    margin-bottom: 5px;
+  }
+  
+  .about h2,
+  .contact h2 {
+    font-family: LatoRegular;
+    font-size: 24px;
+  }
+  
+  .about p {
+    font-family: LatoLight;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  
+  .contact {
+    padding: 0;
+    text-align: left;
+  }
+
+  .divider2 {
+    position: relative;
+    height: 5px;
+    width: 89px;
+    background-color: black;
+    margin-bottom: 5px;
+  }
+
+  
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+  }
+  
+  .social-links div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .linkin_icon,
+  .fb_icon,
+  .insta_icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .insta_icon {
+    height: 40px; 
+  }
+  
+  .links {
+    line-height: 25px;
+  }
+  
+  .inlinked,
+  .fblink,
+  .iglink {
+    font-family: LatoLight;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+
+  /* Navigation Dots */
+  .navigation-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .navigation-dots .dot {
+    width: 50px;
+    height: 10px;
+    background-color: white;
+    opacity: 0.5;
+    border-radius: 10%;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .navigation-dots .dot.active {
+    background-color: white;
+    opacity: 1;
+  }
+  
+
+}
+
+
+      
+
+

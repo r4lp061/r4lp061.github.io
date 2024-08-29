@@ -1,5 +1,7 @@
 const slider = document.querySelector('.slider');
 const slides = document.querySelectorAll('.slide');
+const nextButton = document.querySelector('.nav-hover-next');
+const prevButton = document.querySelector('.nav-hover-prev');
 const dotsContainer = document.querySelector('.navigation-dots');
 
 let currentIndex = 0;
@@ -58,13 +60,58 @@ function handleTouchEnd(event) {
         currentIndex--;
     }
     updateSliderPosition();
+    updateNextButtonState();
+    updatePrevButtonState();
+
 }
+
+function nextSlide() {
+    if (currentIndex < totalSlides - 1) { 
+        currentIndex++;
+        updateSliderPosition();
+        updateNextButtonState();
+        updatePrevButtonState(); // Update the Next button state
+    }
+}
+function prevSlide() {
+    if (currentIndex !== 0) { 
+        currentIndex--;
+        updateSliderPosition();
+        updateNextButtonState();
+        updatePrevButtonState(); // Update the Next button state
+    }
+}
+
+function updateNextButtonState() {
+    if (currentIndex === totalSlides - 1) {
+        nextButton.disabled = true; // Disable the button
+        nextButton.style.visibility = 'hidden'; // Optionally hide the button
+    } else {
+        nextButton.disabled = false; // Enable the button
+        nextButton.style.visibility = 'visible'; // Show the button
+    }
+}
+function updatePrevButtonState() {
+    if (currentIndex === 0) {
+        prevButton.disabled = true; // Disable the button
+        prevButton.style.visibility = 'hidden'; // Optionally hide the button
+    } else {
+        prevButton.disabled = false; // Enable the button
+        prevButton.style.visibility = 'visible'; // Show the button
+    }
+}
+
+
 
 slider.addEventListener('touchstart', handleTouchStart);
 
 slider.addEventListener('touchmove', handleTouchMove);
 
 slider.addEventListener('touchend', handleTouchEnd);
+
+nextButton.addEventListener('click', nextSlide);
+
+prevButton.addEventListener('click', prevSlide);
 
 // Handle dot clicks
 dots.forEach(dot => {
@@ -73,3 +120,6 @@ dots.forEach(dot => {
         updateSliderPosition();
     });
 });
+
+updateNextButtonState()
+updatePrevButtonState()

@@ -33,10 +33,10 @@
   .name {
     font-family: LatoRegular;
     position: absolute;
-    top: 85px; /* Adjusts vertical positioning */
-    left: 50%; /* Moves the element halfway across the parent */
-    transform: translateX(-50%); /* Centers the element by moving it left by half its width */
-    white-space: nowrap; /* Prevents line breaks */
+    top: 85px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    white-space: nowrap; 
     text-align: center;
     font-size: 28px;
     color: white;
@@ -46,9 +46,9 @@
   .title {
     font-family: LatoRegular;
     position: absolute;
-    top: 95px; /* Adjusts spacing below the name */
+    top: 95px; 
     left: 50%;
-    transform: translateX(-50%); /* Centers the element by moving it left by half its width */
+    transform: translateX(-50%);
     font-size: 18px;
     color: white;
     opacity: 0.50;
@@ -139,7 +139,7 @@
   }
   
   .insta_icon {
-    height: 50px; /* Keep your original height */
+    height: 50px; /* Keep original height */
   }
   
   .links {
@@ -155,34 +155,9 @@
     cursor: pointer;
   }
 
-  /* Navigation Dots */
-  .navigation-dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-
-  .navigation-dots .dot {
-    width: 50px;
-    height: 5px;
-    background-color: white;
-    opacity: 0.5;
-    border-radius: 10%;
-    margin: 0 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  .navigation-dots .dot.active {
-    background-color: white;
-    opacity: 1;
-  }
 
   /* Works Section */
 
-  .works {
-    /* content-visibility: hidden;    */
-    position: relative;
-  } 
 
   .myWorks {
     font-family: LatoRegular;
@@ -195,22 +170,24 @@
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    background-color: #76ABAE; 
+    background-color: rgba(118, 171, 174, 0.5); 
+    border-radius: 25px;
     align-items: center;
-    justify-content: space-evenly; 
+    justify-content: space-around;
     text-align: center;
     padding-top: 10px;
   }
-
-  .work1,
+  
+  .work_container .work1,
   .work2,
   .work3,
   .work4,
   .work5,
   .work6 {
     height: 150px;
+    opacity: 1.0; 
     width: 160px;
-    border-radius: 20%;
+    border-radius: 25px;
   }
   
   .workname1,
@@ -219,9 +196,11 @@
   .workname4,
   .workname5,
   .workname6 {
-    transform: translateY(-100%);  
+    font-size: 18px;
+    opacity: 1;
+    transform: translateY(-90%);
   }
-
+  
   .slider-container {
     overflow: hidden;
     width: 100%;
@@ -246,14 +225,14 @@
   
   .navigation-dots .dot {
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 50px;
+    height: 5px;
     background-color: white;
     opacity: 0.5;
-    border-radius: 50%;
-    margin: 0 5px;
+    border-radius: 10%;
+    margin: 0 20px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
   }
   
   .navigation-dots .dot.active {
@@ -262,7 +241,9 @@
   }
   
 
-}
+}  
+
+
 
 
       

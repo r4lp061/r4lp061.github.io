@@ -9,12 +9,12 @@
   }
   
   
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  @media only screen and (min-width: 1367px) and (max-width: 1920px) {
     body {
         margin: 0;
         background-color: #222831;
     }
-
+    
     .container {
         max-width: 100%;
         margin: 0;
@@ -32,12 +32,12 @@
     .name {
         font-family: LatoRegular;
         position: absolute;
-        top: 20vh; 
+        top: 360px; 
         left: 50%; 
-        transform: translateX(-50%); /* Centers the element by moving it left by half its width */
+        transform: translateX(-50%); 
         white-space: nowrap; 
         text-align: center;
-        font-size: 60px;
+        font-size: 100px;
         color: white;
         text-decoration: none;
       }
@@ -45,10 +45,10 @@
     .title {
         font-family: LatoLight;
         position: absolute;
-        top: 22vh; 
+        top: 410px; 
         left: 50%;
         transform: translateX(-50%); /* Centers the element by moving it left by half its width */
-        font-size: 40px;
+        font-size: 60px;
         color: white;
         opacity: 0.50;
       }
@@ -60,7 +60,7 @@
         height: auto;
         object-fit: cover;
       }
-
+    
     .content {
         display: flex;
         justify-content: space-between;
@@ -74,25 +74,24 @@
       
     .profile-pic {
         position: absolute;
-        top: 40vh;
+        top: 900px;
         left: 50%;
-        transform: translateX(-50%); 
-        width: 200px;
+        transform: translateX(-50%); /* Centers the element by moving it left by half its width */
+        width: 400px;
         border-radius: 100%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         margin: auto ;
       }
 
-
     .about-contact-container {
-        top: 65px;
+        top: 120px;
         position: relative;
         display: flex;
         justify-content: space-between; 
         align-items: flex-start; 
         gap: 20px; 
         width: 100%; 
-        padding: 20px; 
+        padding: 30px; 
     }
       
     .about {
@@ -104,7 +103,7 @@
     .divider2,
     .divider3 {
         position: relative;
-        height: 6px;
+        height: 7px;
         width: 95px;
         background-color: black;
         margin-bottom: 5px;
@@ -112,19 +111,19 @@
   
     h2 {
         font-family: LatoRegular;
-        font-size: 25px;
+        font-size: 50px;
     }
   
     p {
         width: 100%;
         font-family: LatoLight;
-        font-size: 25px;
+        font-size: 40px;
         font-weight: 300;
-        line-height: 35px;
+        line-height: 60px;
     }
 
     .contact {
-        flex: 1; /* This will make the contact section take up available space */
+        flex: 1; 
         padding: 20px;
         text-align: left;
       }
@@ -148,12 +147,12 @@
     .fb_icon,
     .insta_icon {
         
-        width: 60px;
-        height: 60px;
+        width: 90px;
+        height: 90px;
     }
     
     .insta_icon {
-        height: 45px; /* Keep original height */
+        height: 70px; /* Keep original height */
     }
     
     
@@ -162,15 +161,15 @@
     .iglink {
         font-family: LatoLight;
         color: white;
-        font-size: 18px;
+        font-size: 30px;
         cursor: pointer;
     }
-
-    /* Works Section */
+    
+/* Works Section */
 
     .works {
-        padding: 20px;
-        top: 15vh;
+        padding: 40px;
+        top: 120px;
         overflow: hidden;
         width: 100%;
         position: relative;      
@@ -180,7 +179,7 @@
         background-color: rgba(118, 171, 174, 0.5); 
         border-radius: 25px;
         overflow: hidden;
-        width: 97%;
+        width: 96%;
         position: relative;
     }
 
@@ -188,17 +187,18 @@
         display: flex;
         transition: transform 0.5s ease-in-out;
         will-change: transform;
+        transition-delay: 2s;
         width: 100%;
         height: auto;
         align-items: center;
         justify-content: space-around;
         text-align: center;
-        padding-top: 10px;
+        padding-top: 20px;
 
     }
 
     .work_item {
-        flex: 1 0 33.33%; /* Shows 3 items at a time  [flex-grow, flex-shrink and flex-basis] */ 
+        flex: 1 0 33.33%; 
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -210,9 +210,9 @@
     .work4,
     .work5,
     .work6 {
-        height: 200px;
+        height: 330px;
+        width: 500px;
         opacity: 1.0; 
-        width: 280px;
         border-radius: 25px;
     }
 
@@ -222,7 +222,7 @@
     .workname4,
     .workname5,
     .workname6 {
-        font-size: 18px;
+        font-size: 30px;
         opacity: 1;
         margin-top: 10px;
     }
@@ -242,7 +242,7 @@
         animation: slide 15s infinite; 
     }
         
-        
+    
     .slider-container {
         overflow: hidden;
         width: 100%;
@@ -261,6 +261,7 @@
     }
     
     .navigation-dots {
+        padding-top: 40px;
         text-align: center;
         margin: 10px 0 20px;
     }
@@ -276,12 +277,43 @@
         cursor: pointer;
         transition: background-color 0.3s ease;
     }
-
+  
     .navigation-dots .dot.active {
         background-color: white;
         opacity: 1;
     }
     
+    .nav-hover-next {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100px;
+        height: 100%;
+        background: transparent;
+        opacity: 0;
+        transition: 3s;
+    }
+
+    .nav-hover-next:hover {
+        background: linear-gradient(to left, black, #222831);
+        opacity: 0.5;
+    }
+
+    .nav-hover-prev {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100%;
+        background: transparent;
+        opacity: 0;
+        transition: 3s;
+    }
+
+    .nav-hover-prev:hover {
+        background: linear-gradient(to right, black, #222831);
+        opacity: 0.5;
+    }
 
 }  
 
@@ -292,6 +324,4 @@
 
 
     
-
-
 

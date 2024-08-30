@@ -9,7 +9,7 @@
 }
 
 
-@media only screen and (max-width: 575px) {
+@media only screen and (min-width:376px) and (max-width: 480px) {
   
   body {
     margin: 0;
@@ -196,7 +196,7 @@
   .workname4,
   .workname5,
   .workname6 {
-    font-size: 18px;
+    font-size: 16px;
     opacity: 1;
     transform: translateY(-90%);
   }

@@ -9,7 +9,7 @@
   }
   
   
-  @media only screen and (min-width: 1200px){
+  @media only screen and (min-width: 1281px) and (max-width:1366px) {
     body {
         margin: 0;
         background-color: #222831;
@@ -32,7 +32,7 @@
     .name {
         font-family: LatoRegular;
         position: absolute;
-        top: 30vh; 
+        top: 320px; 
         left: 50%; 
         transform: translateX(-50%); 
         white-space: nowrap; 
@@ -45,7 +45,7 @@
     .title {
         font-family: LatoLight;
         position: absolute;
-        top: 33vh; 
+        top: 350px; 
         left: 50%;
         transform: translateX(-50%); /* Centers the element by moving it left by half its width */
         font-size: 50px;
@@ -74,7 +74,7 @@
       
     .profile-pic {
         position: absolute;
-        top: 65vh;
+        top: 650px;
         left: 50%;
         transform: translateX(-50%); /* Centers the element by moving it left by half its width */
         width: 300px;
@@ -84,7 +84,7 @@
       }
 
     .about-contact-container {
-        top: 8vh;
+        top: 120px;
         position: relative;
         display: flex;
         justify-content: space-between; 
@@ -111,13 +111,13 @@
   
     h2 {
         font-family: LatoRegular;
-        font-size: 35px;
+        font-size: 40px;
     }
   
     p {
         width: 100%;
         font-family: LatoLight;
-        font-size: 30px;
+        font-size: 35px;
         font-weight: 300;
         line-height: 50px;
     }
@@ -147,12 +147,12 @@
     .fb_icon,
     .insta_icon {
         
-        width: 60px;
-        height: 60px;
+        width: 75px;
+        height: 75px;
     }
     
     .insta_icon {
-        height: 45px; /* Keep original height */
+        height: 55px; /* Keep original height */
     }
     
     
@@ -161,7 +161,7 @@
     .iglink {
         font-family: LatoLight;
         color: white;
-        font-size: 18px;
+        font-size: 26px;
         cursor: pointer;
     }
     
@@ -169,7 +169,7 @@
 
     .works {
         padding: 20px;
-        top: 10vh;
+        top: 150px;
         overflow: hidden;
         width: 100%;
         position: relative;      
@@ -193,7 +193,7 @@
         align-items: center;
         justify-content: space-around;
         text-align: center;
-        padding-top: 10px;
+        padding-top: 20px;
 
     }
 
@@ -210,8 +210,8 @@
     .work4,
     .work5,
     .work6 {
-        height: 250px;
-        width: 320px;
+        height: 280px;
+        width: 350px;
         opacity: 1.0; 
         border-radius: 25px;
     }
@@ -222,7 +222,7 @@
     .workname4,
     .workname5,
     .workname6 {
-        font-size: 18px;
+        font-size: 24px;
         opacity: 1;
         margin-top: 10px;
     }
@@ -261,6 +261,7 @@
     }
     
     .navigation-dots {
+        padding-top: 40px;
         text-align: center;
         margin: 10px 0 20px;
     }

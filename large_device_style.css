@@ -9,7 +9,7 @@
   }
   
   
-  @media only screen and (min-width: 1025px) {
+  @media only screen and (min-width: 992px) and (max-width: 1199px){
     body {
         margin: 0;
         background-color: #222831;
@@ -37,7 +37,7 @@
         transform: translateX(-50%); 
         white-space: nowrap; 
         text-align: center;
-        font-size: 75px;
+        font-size: 70px;
         color: white;
         text-decoration: none;
       }
@@ -48,7 +48,7 @@
         top: 33vh; 
         left: 50%;
         transform: translateX(-50%); /* Centers the element by moving it left by half its width */
-        font-size: 50px;
+        font-size: 45px;
         color: white;
         opacity: 0.50;
       }
@@ -77,14 +77,14 @@
         top: 65vh;
         left: 50%;
         transform: translateX(-50%); /* Centers the element by moving it left by half its width */
-        width: 300px;
+        width: 260px;
         border-radius: 100%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         margin: auto ;
       }
 
     .about-contact-container {
-        top: 75px;
+        top: 90px;
         position: relative;
         display: flex;
         justify-content: space-between; 
@@ -111,15 +111,15 @@
   
     h2 {
         font-family: LatoRegular;
-        font-size: 35px;
+        font-size: 30px;
     }
   
     p {
         width: 100%;
         font-family: LatoLight;
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 300;
-        line-height: 50px;
+        line-height: 40px;
     }
 
     .contact {
@@ -167,80 +167,81 @@
     
 /* Works Section */
 
-.works {
-    padding: 20px;
-    top: 15vh;
-    overflow: hidden;
-    width: 100%;
-    position: relative;      
-}
+    .works {
+        padding: 20px;
+        top: 16vh;
+        overflow: hidden;
+        width: 100%;
+        position: relative;      
+    }
 
-.navigator {
-    background-color: rgba(118, 171, 174, 0.5); 
-    border-radius: 25px;
-    overflow: hidden;
-    width: 97%;
-    position: relative;
-}
+    .navigator {
+        background-color: rgba(118, 171, 174, 0.5); 
+        border-radius: 25px;
+        overflow: hidden;
+        width: 97%;
+        position: relative;
+    }
 
-.work_container {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    will-change: transform;
-    width: 100%;
-    height: auto;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    padding-top: 10px;
+    .work_container {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        will-change: transform;
+        transition-delay: 2s;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        padding-top: 10px;
 
-}
+    }
 
-.work_item {
-    flex: 1 0 33.33%; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .work_item {
+        flex: 1 0 33.33%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.work_container .work1,
-.work2,
-.work3,
-.work4,
-.work5,
-.work6 {
-    height: 270px;
-    opacity: 1.0; 
-    width: 300px;
-    border-radius: 25px;
-}
+    .work_container .work1,
+    .work2,
+    .work3,
+    .work4,
+    .work5,
+    .work6 {
+        height: 250px;
+        width: 320px;
+        opacity: 1.0; 
+        border-radius: 25px;
+    }
 
-.workname1,
-.workname2,
-.workname3,
-.workname4,
-.workname5,
-.workname6 {
-    font-size: 18px;
-    opacity: 1;
-    margin-top: 10px;
-}
+    .workname1,
+    .workname2,
+    .workname3,
+    .workname4,
+    .workname5,
+    .workname6 {
+        font-size: 18px;
+        opacity: 1;
+        margin-top: 10px;
+    }
 
-@keyframes slide {
-    0% { transform: translateX(0); }
-    20% { transform: translateX(0); }
-    25% { transform: translateX(-33.33%); }
-    45% { transform: translateX(-33.33%); }
-    50% { transform: translateX(-66.66%); }
-    70% { transform: translateX(-66.66%); }
-    75% { transform: translateX(-100%); }
-    95% { transform: translateX(-100%); }
-}
+    @keyframes slide {
+        0% { transform: translateX(0); }
+        20% { transform: translateX(0); }
+        25% { transform: translateX(-33.33%); }
+        45% { transform: translateX(-33.33%); }
+        50% { transform: translateX(-66.66%); }
+        70% { transform: translateX(-66.66%); }
+        75% { transform: translateX(-100%); }
+        95% { transform: translateX(-100%); }
+    }
 
-.navigator .work_container {
-    animation: slide 15s infinite; 
-}
-    
+    .navigator .work_container {
+        animation: slide 15s infinite; 
+    }
+        
     
     .slider-container {
         overflow: hidden;

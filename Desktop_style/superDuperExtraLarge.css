@@ -1,0 +1,324 @@
+@font-face {
+    font-family: LatoRegular;
+    src: url(../Lato/Lato-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: LatoLight;
+    src: url(../Lato/Lato-Light.ttf);
+  }
+  
+  
+@media only screen and (min-width: 1921px) and (max-width: 2560px){
+    body {
+        margin: 0;
+        background-color: #222831;
+    }
+    
+    .container {
+        max-width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .header {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+    }
+
+    .name {
+        font-family: LatoRegular;
+        position: absolute;
+        top: 500px; 
+        left: 50%; 
+        transform: translateX(-50%); 
+        white-space: nowrap; 
+        text-align: center;
+        letter-spacing: 4px;
+        font-size: 120px;
+        color: white;
+        text-decoration: none;
+      }
+        
+    .title {
+        font-family: LatoLight;
+        position: absolute;
+        top: 540px; 
+        left: 50%;
+        transform: translateX(-50%); /* Centers the element by moving it left by half its width */
+        font-size: 90px;
+        color: white;
+        opacity: 0.50;
+      }
+      
+      
+    .background-img {
+        top: 0;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    
+    .content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: flex-start; 
+        background-color: #222831;
+        margin:0 auto;
+        color: white;
+        text-align: left;
+      }
+      
+    .profile-pic {
+        position: absolute;
+        top: 1250px;
+        left: 50%;
+        transform: translateX(-50%); /* Centers the element by moving it left by half its width */
+        width: 460px;
+        border-radius: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: auto ;
+      }
+
+    .about-contact-container {
+        top: 100px;
+        position: relative;
+        display: flex;
+        justify-content: space-between; 
+        align-items: flex-start; 
+        gap: 20px; 
+        width: 100%; 
+        padding: 30px; 
+    }
+      
+    .about {
+        flex: 1;
+        padding: 20px;
+      }
+
+    .divider,
+    .divider2,
+    .divider3 {
+        position: relative;
+        height: 7px;
+        width: 150px;
+        background-color: black;
+        margin-bottom: 5px;
+    }
+  
+    h2 {
+        font-family: LatoRegular;
+        font-size: 70px;
+    }
+  
+    p {
+        width: 100%;
+        font-family: LatoLight;
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 60px;
+    }
+
+    .contact {
+        flex: 1; 
+        padding: 20px;
+        text-align: left;
+      }
+    
+    
+      
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 12px;
+    }
+    
+    .social-links div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .linkin_icon,
+    .fb_icon,
+    .insta_icon {
+        
+        width: 120px;
+        height: 120px;
+    }
+    
+    .insta_icon {
+        height: 90px; /* Keep original height */
+    }
+    
+    
+    .inlinked,
+    .fblink,
+    .iglink {
+        font-family: LatoLight;
+        color: white;
+        font-size: 40px;
+        cursor: pointer;
+    }
+    
+/* Works Section */
+
+    .works {
+        padding: 20px;
+        top: 125px;
+        overflow: hidden;
+        width: 100%;
+        position: relative;      
+    }
+
+    .navigator {
+        background-color: rgba(118, 171, 174, 0.5); 
+        border-radius: 25px;
+        overflow: hidden;
+        width: 97%;
+        position: relative;
+    }
+
+    .work_container {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        will-change: transform;
+        transition-delay: 2s;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        padding-top: 20px;
+
+    }
+
+    .work_item {
+        flex: 1 0 33.33%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work_container .work1,
+    .work2,
+    .work3,
+    .work4,
+    .work5,
+    .work6 {
+        height: 350px;
+        width: 600px;
+        opacity: 1.0; 
+        border-radius: 25px;
+    }
+
+    .workname1,
+    .workname2,
+    .workname3,
+    .workname4,
+    .workname5,
+    .workname6 {
+        font-size: 28px;
+        font-weight:600;
+        opacity: 1;
+        margin-top: 10px;
+    }
+
+    @keyframes slide {
+        0% { transform: translateX(0); }
+        20% { transform: translateX(0); }
+        25% { transform: translateX(-33.33%); }
+        45% { transform: translateX(-33.33%); }
+        50% { transform: translateX(-66.66%); }
+        70% { transform: translateX(-66.66%); }
+        75% { transform: translateX(-100%); }
+        95% { transform: translateX(-100%); }
+    }
+
+    .navigator .work_container {
+        animation: slide 15s infinite; 
+    }
+        
+    
+    .slider-container {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+    }
+    
+    .slider {
+        display: flex;
+        transition: transform 0.5s ease;
+        will-change: transform;
+    }
+    
+    .slide {
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .navigation-dots {
+        padding-top: 80px;
+        text-align: center;
+        margin: 10px 0 20px;
+    }
+    
+    .navigation-dots .dot {
+        display: inline-block;
+        width: 100px;
+        height: 9px;
+        background-color: white;
+        opacity: 0.5;
+        border-radius: 10%;
+        margin: 0 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+  
+    .navigation-dots .dot.active {
+        background-color: white;
+        opacity: 1;
+    }
+    
+    .nav-hover-next {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100px;
+        height: 100%;
+        background: transparent;
+        opacity: 0;
+        transition: 3s;
+    }
+
+    .nav-hover-next:hover {
+        background: linear-gradient(to left, black, #222831);
+        opacity: 0.5;
+    }
+
+    .nav-hover-prev {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100%;
+        background: transparent;
+        opacity: 0;
+        transition: 3s;
+    }
+
+    .nav-hover-prev:hover {
+        background: linear-gradient(to right, black, #222831);
+        opacity: 0.5;
+    }
+
+}  
+  
+  
+  
+  
